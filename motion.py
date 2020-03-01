@@ -7,7 +7,6 @@ import RPi.GPIO as GPIO
 
 import urllib.request
 
-#print("Content-type: text/html")
  
 def RCtime (RCpin):
         GPIO.setmode(GPIO.BCM)     
@@ -20,12 +19,7 @@ def RCtime (RCpin):
         
         webUrl  = urllib.request.urlopen('https://ironlinks.ru/penny/test.php')
          
-        
-        #text = "обнаружено движение..." 
-        #print(text, end='', flush=True)
-        #time.sleep(3)
-        #print('\b' * len(text) + ' ' * len(text), end='', flush=True)
-        
+           
 while True:
         RCtime(16)
         time.sleep(5)
